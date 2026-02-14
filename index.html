@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💌 Para Ti</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+  <canvas id="confetti"></canvas>
+
+
+  <div id="noPortal" aria-hidden="true"></div>
+
+  <div id="ytWrap" aria-hidden="true"><div id="ytPlayer"></div></div>
+
+  <main class="wrap">
+    <section class="screen intro">
+      <div class="glass">
+        <h1>Holis</h1>
+        <p class="lead">feliz dia de san valentin, queria preguntarte algo... Si no te molesta claro</p>
+
+        <button id="openBtn" class="openBtn" type="button">
+          Abrir carta
+          <span class="arrow"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen letter" id="letterSection">
+      <div class="stage">
+        <div class="envelope" id="envelope">
+          <div class="env-shadow"></div>
+          <div class="env-back"></div>
+
+          <div class="env-flap">
+            <div class="flap-shine"></div>
+          </div>
+
+          <div class="paper" id="paper">
+            <div class="paper-top">
+              <div class="seal"></div>
+              <div class="lines">
+                <div class="line w80"></div>
+                <div class="line w65"></div>
+                <div class="line w90"></div>
+              </div>
+            </div>
+
+            <div class="paper-mid">
+              <div class="bigText">¿Quieres ser mi pareja?</div>
+              <div class="subText">Elige o chillo</div>
+            </div>
+
+            <div class="paper-actions" id="actions">
+              <div class="buttons">
+                <button id="yesBtn" class="btn yes" type="button">Sí</button>
+                <button id="noBtn" class="btn no" type="button">No</button>
+              </div>
+              <p class="msg" id="msg"></p>
+            </div>
+          </div>
+
+          <div class="env-front"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
